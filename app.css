@@ -1,0 +1,228 @@
+/*clearfix*/
+.c-fix:after{
+  content:""; 
+  display:table; 
+  clear:both;
+}
+
+.metro-interactive{
+  padding:1rem 0rem;
+  max-width:1920px;
+  margin:0rem auto;
+}
+
+.metro-interactive svg{overflow:visible;}
+
+/*use border-box on div containers*/
+.metro-interactive div{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+
+/*text*/
+/*by default, match site styling*/
+.metro-interactive p, .metro-interactive li, .metro-interactive select{
+  font-family:"PT Serif", Times, serif;
+  margin:1em 0em 1em 0em;
+  color: #111111;
+  line-height:1.75em;
+}
+
+.metro-interactive text{
+  font-size:1rem;
+  font-family:"PT Serif", Times, serif;
+  fill: #111111;
+  user-select:none;
+}
+
+/*three levels of titles*/
+/*1 - big, section separator*/
+.metro-interactive div.section-title-mpp{
+  margin:4rem 0em 3rem 0em;
+  padding: 1rem 1rem 1rem 1rem;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+/*left off here*/
+.metro-interactive div.section-title-mpp.image-backed{
+  padding:100px 0rem 3rem 0rem;
+  margin:4rem 0em 3rem 0em;
+  min-height:65vh;
+  width:100%;
+  background-attachment: fixed;
+  background-size:cover;
+  border:none;
+}
+
+.metro-interactive div.as-table{
+  display:table;
+}
+
+.metro-interactive div.as-table > div{
+  display:table-row;
+}
+
+.metro-interactive div.as-table > div > div{
+  display:table-cell;
+  vertical-align:bottom;
+  padding:0rem 2rem 0rem 0rem;
+  width:50%;
+}
+
+.metro-interactive div.as-table > div > div p{margin:0px;}
+
+.metro-interactive .centre-col{
+  max-width:780px;
+  padding:0rem 2rem;
+  margin:0rem auto 3rem auto;
+}
+
+.metro-interactive div.section-title-mpp.image-backed > div{
+  max-width:780px;
+  margin: 2rem auto;
+  padding:1rem 2rem;
+
+  background-color:rgba(0,44,66,0.75);
+}
+
+.metro-interactive div.section-title-mpp.image-backed > div > p{
+  font-size:1.15rem;
+  font-style:italic;
+  text-shadow: 1px 1px 3px #333333;
+  color:#ffffff;
+  margin:1rem 0rem;
+}
+
+.metro-interactive div.section-title-mpp.image-backed > div > p:first-child{
+  font-style:normal;
+  font-size:2.5rem;
+  line-height:1.4em;
+  margin-bottom:1.5rem;
+}
+
+.metro-interactive div.section-title-mpp.no-border{border-bottom:none;}
+.metro-interactive div.section-title-mpp > p{
+  font-weight:bold;
+  font-size:2em;
+  line-height:1.5em;
+  margin:0em auto;
+}
+.metro-interactive div.section-title-mpp > p{
+  max-width:1200px;
+  text-align:center;
+}
+
+/*2 - bold item title -- usually chart*/
+.metro-interactive p.chart-title{
+  font-size:1.35em;
+  font-weight:bold;
+  margin:0rem 0rem 1rem 0rem;
+}
+
+/*3 - subtitle*/
+.metro-interactive p.chart-subtitle{
+  font-size:1.15em;
+  margin:-1rem 0rem 1rem 0rem;
+}
+
+.metro-interactive div > img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.metro-interactive .chart-col{
+  min-height:350px;
+  background-color:#eeeeee;
+  padding:2rem 1rem;
+  margin:0rem auto 3rem auto;
+}
+
+.metro-interactive .chart-col > div{
+  max-width:1750px;
+  margin:0rem auto;
+}
+
+.metro-interactive .chart-col > div > div{
+  float:left;
+  width:70%;
+  padding:1rem;
+}
+
+.metro-interactive .chart-col > div > div > p:first-child{
+  margin-top:0px;
+}
+
+.metro-interactive .chart-col > div > div > p > strong{
+  font-size:1.15em;
+}
+
+.metro-interactive .chart-col > div > div:first-child{
+  float:left;
+  width:30%;
+}
+
+.metro-interactive select{
+  margin:0rem;
+  padding:7px 4px;
+}
+
+.metro-interactive .select-prompt{
+  margin:0rem;
+}
+
+.metro-interactive .panel-wrap p{
+  margin:0rem;
+}
+
+.metro-interactive .panel-wrap > div:first-child{
+  float:left;
+  width:33%;
+  padding-right:2rem;
+}
+
+.metro-interactive .panel-wrap > div{
+  float:left;
+  width:66%;
+}
+
+.metro-interactive .all-caps-prompt{
+  font-size:0.85rem;
+  text-transform:uppercase;
+}
+
+
+.metro-interactive table thead tr th{
+  font-weight:bold;
+}
+
+.metro-interactive table thead tr th,
+.metro-interactive table tbody tr td{
+  background:none;
+  background-color:transparent;
+  text-align:left;
+  border-bottom:1px solid #dddddd;
+  vertical-align:bottom;
+  padding:5px 5px 3px 5px;
+}
+
+@media (min-width:0px){
+
+}
+
+@media (min-width:800px){
+
+
+}
+
+@media (min-width:1250px){
+
+}
+
+@media (min-width:1920px){
+  .metro-interactive div.section-title-mpp.image-backed{
+    border-radius:9px;
+  }
+}

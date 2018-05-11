@@ -1,6 +1,8 @@
 import dir from "../../../js-modules/rackspace.js";
 import degradation from "../../../js-modules/degradation.js";
 
+import interactive from "./interactive.js";
+
 
 //main function
 function main(){
@@ -8,7 +10,7 @@ function main(){
 
   //local
   dir.local("./");
-  //dir.add("dirAlias", "path/to/dir");
+  dir.add("img", "build/images/unsplash/");
   //dir.add("dirAlias", "path/to/dir");
 
 
@@ -20,7 +22,22 @@ function main(){
 
   //browser degradation
   if(compat.browser()){
-    //run app...
+
+
+    var images = [
+                  "igor-ovsyannykov-255640-unsplash.jpg",
+                  "kyle-glenn-628068-unsplash.jpg", 
+                  "lionello-delpiccolo-151750-unsplash.jpg",
+                  "samuel-scrimshaw-166751-unsplash.jpg"
+                  ]
+
+    var banners = d3.selectAll(".section-title-mpp.image-backed");
+
+    banners.style("background-image", function(d,i){
+      return 'url("' + dir.url("img", images[(i%4)]) + '")';
+    });
+
+    interactive();
   }
 
 
